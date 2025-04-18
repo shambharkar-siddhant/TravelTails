@@ -241,87 +241,150 @@
     background: linear-gradient(90deg, hsl(var(--primary)), transparent, hsl(var(--primary)));
   }
 
-  /* Add font family classes */
+  /* Custom font classes */
   .font-serif {
     font-family: 'Georgia', serif;
   }
 
   .font-sans {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Quicksand', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   }
 
   .font-handwriting {
-    font-family: 'Caveat', 'Brush Script MT', cursive;
+    font-family: 'Indie Flower', 'Brush Script MT', cursive;
+  }
+
+  .font-display {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
   }
 }
 
 @layer components {
-  /* Define additional color utility classes */
+  /* Cheerful color classes */
   .text-dark {
-    color: #2D3748;
+    @apply text-gray-700;
   }
 
   .bg-dark {
-    background-color: #2D3748;
+    @apply bg-gray-800;
   }
 
-  /* Add responsive styling for the featured image */
+  .bg-paper {
+    background-color: #fffdf9;
+  }
+  
+  .bg-cream {
+    background-color: #FFF8E7;
+  }
+
+  /* Playful shadows and hover effects */
+  .shadow-fun {
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+  }
+  
+  .shadow-fun:hover {
+    box-shadow: 5px 5px 0 rgba(0, 0, 0, 0.15);
+    transform: translate(-2px, -2px);
+  }
+
+  /* Featured image styling */
   .featured-img-container {
     position: relative;
     overflow: hidden;
-    border-radius: 0.75rem;
+    border-radius: 1.2rem;
+    border: 3px solid white;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
   }
 
   .featured-img {
-    transition: transform 0.5s ease;
+    transition: transform 0.8s ease;
   }
 
   .featured-img-container:hover .featured-img {
-    transform: scale(1.05);
+    transform: scale(1.05) rotate(1deg);
   }
 
-  /* Personal blog styling */
+  /* Fun blog card styling */
   .blog-card {
-    border-radius: 0.75rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 1.2rem;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border: 3px solid white;
+    background-color: #fffdf9;
+    overflow: hidden;
   }
 
   .blog-card:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) rotate(1deg);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   }
 
-  /* Custom bullet points */
+  /* Custom bullet points with hearts */
   .custom-list li {
     position: relative;
-    padding-left: 1.5rem;
+    padding-left: 1.8rem;
+    margin-bottom: 0.5rem;
   }
 
   .custom-list li::before {
-    content: "✧";
+    content: "♥";
     position: absolute;
     left: 0;
     color: hsl(var(--primary));
+    font-size: 1.1rem;
   }
 
-  /* Journal-like styling */
+  /* Journal-like styling with doodle border */
   .journal-entry {
-    border-left: 3px solid hsl(var(--primary));
+    border-left: 3px dashed hsl(var(--primary));
     padding-left: 1.5rem;
+    position: relative;
+  }
+  
+  .journal-entry::after {
+    content: "✎";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    color: hsl(var(--primary));
+    font-size: 1.3rem;
+    transform: rotate(-15deg);
   }
 
   /* Polaroid-style images */
   .polaroid {
     background: white;
-    padding: 1rem;
-    padding-bottom: 2.5rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 0.75rem;
+    padding-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     display: inline-block;
     transform: rotate(var(--rotation, 0deg));
+    position: relative;
+    border: 1px solid #f0f0f0;
+  }
+  
+  .polaroid::after {
+    content: "";
+    position: absolute;
+    top: 0.25rem;
+    right: 0.25rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    background: rgba(255,255,255,0.5);
+    border-radius: 50%;
+    box-shadow: 
+      -0.75rem 0 0 rgba(255,255,255,0.5), 
+      0 0.75rem 0 rgba(255,255,255,0.5), 
+      -0.75rem 0.75rem 0 rgba(255,255,255,0.5);
   }
 
-  /* Link underline animation */
+  /* Playful link animation */
   .hover-underline-animation {
     position: relative;
+    color: hsl(var(--primary));
+    text-decoration: none;
+    font-weight: 500;
   }
 
   .hover-underline-animation::after {
@@ -332,7 +395,7 @@
     height: 2px;
     bottom: -4px;
     left: 0;
-    background-color: hsl(var(--accent));
+    background: linear-gradient(90deg, hsl(var(--primary)), hsl(var(--primary)/0.6), hsl(var(--primary)));
     transform-origin: bottom right;
     transition: transform 0.3s ease-out;
   }
@@ -340,5 +403,65 @@
   .hover-underline-animation:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+  
+  /* Bouncy button animations */
+  .btn-bounce {
+    transition: all 0.2s ease;
+  }
+  
+  .btn-bounce:hover {
+    transform: scale(1.05);
+  }
+  
+  .btn-bounce:active {
+    transform: scale(0.95);
+  }
+  
+  /* Handwritten highlight effect */
+  .highlight {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .highlight::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    background-color: hsl(var(--primary)/0.2);
+    z-index: -1;
+    transform: rotate(-1deg);
+  }
+  
+  /* Doodle divider */
+  .divider-doodle {
+    height: 5px;
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='5' viewBox='0 0 100 5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 2.5C20 2.5 20 0.5 40 0.5C60 0.5 60 4.5 80 4.5C100 4.5 100 2.5 120 2.5' stroke='%23FFC107' stroke-width='2' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+    background-repeat: repeat-x;
+    border: none;
+    margin: 2rem 0;
+  }
+  
+  /* Fun page section */
+  .fun-section {
+    border-radius: 1.5rem;
+    background-color: #fffdf9;
+    box-shadow: 0 10px 30px -15px rgba(0,0,0,0.1);
+    border: 1px dashed hsl(var(--primary)/0.3);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .fun-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, hsl(var(--primary)), transparent, hsl(var(--primary)));
   }
 }
