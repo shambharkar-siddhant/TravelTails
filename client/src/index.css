@@ -240,4 +240,105 @@
     height: 5px;
     background: linear-gradient(90deg, hsl(var(--primary)), transparent, hsl(var(--primary)));
   }
+
+  /* Add font family classes */
+  .font-serif {
+    font-family: 'Georgia', serif;
+  }
+
+  .font-sans {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+
+  .font-handwriting {
+    font-family: 'Caveat', 'Brush Script MT', cursive;
+  }
+}
+
+@layer components {
+  /* Define additional color utility classes */
+  .text-dark {
+    color: #2D3748;
+  }
+
+  .bg-dark {
+    background-color: #2D3748;
+  }
+
+  /* Add responsive styling for the featured image */
+  .featured-img-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.75rem;
+  }
+
+  .featured-img {
+    transition: transform 0.5s ease;
+  }
+
+  .featured-img-container:hover .featured-img {
+    transform: scale(1.05);
+  }
+
+  /* Personal blog styling */
+  .blog-card {
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .blog-card:hover {
+    transform: translateY(-5px);
+  }
+
+  /* Custom bullet points */
+  .custom-list li {
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .custom-list li::before {
+    content: "✧";
+    position: absolute;
+    left: 0;
+    color: hsl(var(--primary));
+  }
+
+  /* Journal-like styling */
+  .journal-entry {
+    border-left: 3px solid hsl(var(--primary));
+    padding-left: 1.5rem;
+  }
+
+  /* Polaroid-style images */
+  .polaroid {
+    background: white;
+    padding: 1rem;
+    padding-bottom: 2.5rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: inline-block;
+    transform: rotate(var(--rotation, 0deg));
+  }
+
+  /* Link underline animation */
+  .hover-underline-animation {
+    position: relative;
+  }
+
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: hsl(var(--accent));
+    transform-origin: bottom right;
+    transition: transform 0.3s ease-out;
+  }
+
+  .hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
 }

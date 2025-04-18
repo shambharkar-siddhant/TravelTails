@@ -1,14 +1,9 @@
-<<<<<<< HEAD
 import { useState, useEffect } from "react";
-=======
-import { useState } from "react";
->>>>>>> 098209bc (Add a travel blog website)
 import { Link, useLocation } from "wouter";
 
 const Header = () => {
   const [location] = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-<<<<<<< HEAD
   const [scrolled, setScrolled] = useState(false);
   
   // Handle scroll effect
@@ -24,8 +19,6 @@ const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-=======
->>>>>>> 098209bc (Add a travel blog website)
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!mobileMenuOpen);
