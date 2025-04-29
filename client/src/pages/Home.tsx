@@ -231,51 +231,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* About Me Mini Section */}
-      <section className="py-16 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="fun-section max-w-5xl mx-auto p-8 md:p-12">
-            <div className="flex flex-col md:flex-row items-center">
-              <div className="md:w-1/3 mb-8 md:mb-0">
-                <div className="polaroid mx-auto" style={{ '--rotation': '-2deg' } as React.CSSProperties}>
-                  <img 
-                    src="https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=400&q=80" 
-                    alt="Me with backpack overlooking sunset"
-                    className="w-full h-auto"
-                  />
-                  <p className="text-center font-handwriting mt-2 text-gray-600">hello! i'm alex ♥</p>
-                </div>
-              </div>
-              <div className="md:w-2/3 md:pl-12">
-                <h2 className="text-4xl font-display text-primary mb-4 text-center md:text-left">
-                  about me
-                </h2>
-                <div className="w-20 h-1 bg-primary rounded-full mb-6 mx-auto md:mx-0"></div>
-                <div className="journal-entry">
-                  <p className="text-lg mb-6 text-gray-700 font-handwriting">
-                    I'm just someone who loves exploring this beautiful world of ours! Always with a camera in one hand and probably a local snack in the other.
-                  </p>
-                  <p className="text-lg mb-8 text-gray-700 font-handwriting">
-                    When I'm not traveling, I'm planning my next adventure or reminiscing about past ones. This is my little corner to share those memories!
-                  </p>
-                </div>
-                <div className="text-center md:text-left">
-                  <Link 
-                    href="/about" 
-                    className="btn-bounce inline-flex items-center px-6 py-2 bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-white rounded-full transition-all duration-300 font-handwriting text-lg"
-                  >
-                    more about me
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Newsletter Section */}
       <Newsletter />
       
