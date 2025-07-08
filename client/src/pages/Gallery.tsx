@@ -9,11 +9,6 @@ const Gallery = () => {
     return Math.random() * 6 * (Math.random() > 0.5 ? 1 : -1);
   };
 
-  // Create a random rotation for polaroid effect
-  const getRotation = () => {
-    return Math.random() * 6 * (Math.random() > 0.5 ? 1 : -1);
-  };
-
   return (
     <div>
       {/* Hero Section */}

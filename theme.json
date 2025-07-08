@@ -1,13 +1,6 @@
 {
-<<<<<<< HEAD
   "variant": "vibrant",
   "primary": "hsl(40, 95%, 55%)",
   "appearance": "light",
   "radius": 1.2
-=======
-  "variant": "tint",
-  "primary": "hsl(173, 38%, 40%)",
-  "appearance": "light",
-  "radius": 0.75
->>>>>>> cf1d59c5 (Improved the blog's personal style)
 }
