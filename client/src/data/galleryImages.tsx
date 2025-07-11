@@ -225,5 +225,120 @@ export const galleryLocations: GalleryLocation[] = [
         description: ""
       }
     ]
+  },
+  {
+    id: 3,
+    name: "Goa",
+    slug: "sober-in-goa",
+    coverImage: "/images/goa/cover.jpg",
+    description: "Went for a detox, ended up at a beach rave with seafood in one hand and a mojito in the other. Classic Goa.",
+    date: "December 2022",
+    images: [
+      {
+        id: 301,
+        src: "/images/goa/gallery_1.jpg",
+        alt: "Vibing with Statue",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 302,
+        src: "/images/goa/gallery_2.jpg",
+        alt: "Mandatory Goa PIcture",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 303,
+        src: "/images/goa/gallery_3.jpg",
+        alt: "Beach Pose",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 304,
+        src: "/images/goa/gallery_4.jpg",
+        alt: "The famous Beach",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 305,
+        src: "/images/goa/gallery_5.jpg",
+        alt: "I think they look cool",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 306,
+        src: "/images/goa/gallery_6.jpg",
+        alt: "Desi Boys",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 307,
+        src: "/images/goa/gallery_7.jpg",
+        alt: "Now thats a good look",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 309,
+        src: "/images/goa/gallery_9.jpg",
+        alt: "Discussing if its a log or crocodile",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 311,
+        src: "/images/goa/gallery_11.jpg",
+        alt: "Just me looking at couples",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 312,
+        src: "/images/goa/gallery_12.jpg",
+        alt: "The Gangs of Goa",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 313,
+        src: "/images/goa/gallery_14.jpg",
+        alt: "The Gangs of Goa 2",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 314,
+        src: "/images/goa/gallery_15.jpg",
+        alt: "Dil Chahta hai 2",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 315,
+        src: "/images/goa/gallery_17.jpg",
+        alt: "Love Civil Engineering so much that trying to merge in the smooth road",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 316,
+        src: "/images/goa/gallery_18.jpg",
+        alt: "Now I can go fishing",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+      {
+        id: 317,
+        src: "/images/goa/gallery_19.jpg",
+        alt: "Highly expensive hotel, can only afford to look",
+        date: "Dec 14, 2022",
+        description: ""
+      },
+    ]
   }
 ];
