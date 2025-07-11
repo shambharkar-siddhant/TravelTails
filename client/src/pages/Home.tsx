@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 const Home = () => {
   // Get the featured post (first in the list)
-  const featuredPost = blogPosts[0];
+  const featuredPost = blogPosts[blogPosts.length - 1];
   
   // Get recent posts excluding the featured one
   const recentPosts = blogPosts.slice(1, 4);
@@ -204,7 +204,7 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Recent Posts Section */}
+      {/* Recent Posts Section
       <section className="py-16 md:py-24 relative">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
@@ -229,7 +229,7 @@ const Home = () => {
             </Link>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Newsletter Section */}
       <Newsletter />

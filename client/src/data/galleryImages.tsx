@@ -117,5 +117,113 @@ export const galleryLocations: GalleryLocation[] = [
         description: ""
       }
     ]
+  },
+  {
+    id: 2,
+    name: "Pondicherry",
+    slug: "Puducherry",
+    coverImage: "/images/pondicherry/gallery_cover.jpg",
+    description: "Slice of French in India.",
+    date: "May 2025",
+    images: [
+      {
+        id: 201,
+        src: "/images/pondicherry/gallery_1.jpg",
+        alt: "French Breakfast",
+        date: "May 17, 2025",
+        description: "location: Coromandel Cafe"
+      },
+      {
+        id: 202,
+        src: "/images/pondicherry/gallery_2.jpg",
+        alt: "All types of sugar and maida",
+        date: "May 18, 2025",
+        description: "location: Baker Streets Cafe"
+      },
+      {
+        id: 203,
+        src: "/images/pondicherry/gallery_3.jpeg",
+        alt: "Some random resturant in Pondicherry",
+        date: "May 18, 2025",
+        description: ""
+      },
+      {
+        id: 204,
+        src: "/images/pondicherry/gallery_4.jpeg",
+        alt: "All time Candid Pose of Boys",
+        date: "May 18, 2025",
+        description: ""
+      },
+      {
+        id: 205,
+        src: "/images/pondicherry/gallery_5.jpeg",
+        alt: "Matrimandir design plan",
+        date: "May 18, 2025",
+        description: ""
+      },
+      {
+        id: 206,
+        src: "/images/pondicherry/gallery_6.jpeg",
+        alt: "New camera clicking picture of Old Camera",
+        date: "May 18, 2025",
+        description: ""
+      },
+      {
+        id: 207,
+        src: "/images/pondicherry/gallery_7.jpeg",
+        alt: "Random Majestic Tree",
+        date: "May 18, 2025",
+        description: ""
+      },
+      {
+        id: 208,
+        src: "/images/pondicherry/gallery_8.jpeg",
+        alt: "Me getting enlightenment",
+        date: "May 18, 2025",
+        description: ""
+      },
+      {
+        id: 209,
+        src: "/images/pondicherry/gallery_9.jpeg",
+        alt: "Inside of Sphere",
+        date: "May 18, 2025",
+        description: ""
+      },
+      {
+        id: 210,
+        src: "/images/pondicherry/gallery_10.jpeg",
+        alt: "Good Place to Eat",
+        date: "May 17, 2025",
+        description: ""
+      },
+      {
+        id: 211,
+        src: "/images/pondicherry/gallery_11.jpeg",
+        alt: "Church",
+        date: "May 17, 2025",
+        description: ""
+      },
+      {
+        id: 212,
+        src: "/images/pondicherry/gallery_12.jpeg",
+        alt: "Streets of french colony",
+        date: "May 18, 2025",
+        description: ""
+      },
+      {
+        id: 213,
+        src: "/images/pondicherry/gallery_13.jpg",
+        alt: "Me, looking sexy af",
+        date: "May 18, 2025",
+        description: ""
+      },
+      {
+        id: 214,
+        src: "/images/pondicherry/gallery_14.jpg",
+        alt: "Me, trying to look mysterious",
+        date: "May 18, 2025",
+        description: ""
+      }
+    ]
   }
 ];
