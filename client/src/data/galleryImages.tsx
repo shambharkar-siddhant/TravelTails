@@ -305,13 +305,6 @@ export const galleryLocations: GalleryLocation[] = [
         description: ""
       },
       {
-        id: 313,
-        src: "/images/goa/gallery_14.jpg",
-        alt: "The Gangs of Goa 2",
-        date: "Dec 14, 2022",
-        description: ""
-      },
-      {
         id: 314,
         src: "/images/goa/gallery_15.jpg",
         alt: "Dil Chahta hai 2",
