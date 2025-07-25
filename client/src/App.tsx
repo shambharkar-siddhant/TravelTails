@@ -12,6 +12,7 @@ import LocationGallery from "@/pages/LocationGallery";
 import About from "@/pages/About";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Analytics } from "@vercel/analytics/react";
 
 function Router() {
   return (
@@ -39,6 +40,7 @@ function App() {
       <TooltipProvider>
         <Toaster />
         <Router />
+        <Analytics />
       </TooltipProvider>
     </QueryClientProvider>
   );
